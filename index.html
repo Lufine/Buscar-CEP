@@ -9,17 +9,28 @@
 </head>
 <body>
     <h1>Buscar CEP</h1>
-    <input type="text" placeholder="Digite o CEP" id="cep">
-    <button id="btn">Buscar</button>
+
+    <!-- Busca por CEP -->
+    <div id="cepSearch">
+        <input type="text" placeholder="Digite o CEP" id="cep">
+        <button id="btn">Buscar</button>
+        <button id="btnAlt" class="alt-button">Não sabe o CEP?</button>
+    </div>
+
+    <!-- Busca por Endereço (escondida por padrão) -->
+    <div id="addressSearch" class="hide">
+        <input type="text" placeholder="Digite o UF (Ex: GO)" id="uf">
+        <input type="text" placeholder="Digite a cidade" id="city">
+        <input type="text" placeholder="Digite o logradouro (Ex: Rua das Flores)" id="street">
+        <button id="searchAddressBtn">Buscar endereço</button>
+        <button id="backToCepBtn" class="alt-button">Voltar para buscar pelo CEP</button>
+    </div>
 
     <div id="resultado" class="hide">
-        <h2>Resultado</h2>
-        <p>CEP: <span id="cepResultado"></span></p>
-        <p>Logradouro: <span id="logradouro"></span></p>
-        <p>Bairro: <span id="bairro"></span></p>
-        <p>Cidade: <span id="cidade"></span></p>
-        <p>Estado: <span id="estado"></span></p>
+        <h2>Resultados</h2>
+        <ul id="enderecos"></ul>
     </div>
+
 
     <script src="./js/script.js"></script>
 </body>
