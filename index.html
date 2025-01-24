@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Buscar CEP</title>
+    <link rel="shortcut icon" href="./assets/gps.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Buscar CEP</h1>
+    <input type="text" placeholder="Digite o CEP" id="cep">
+    <button id="btn">Buscar</button>
+
+    <div id="resultado" class="hide">
+        <h2>Resultado</h2>
+        <p>CEP: <span id="cepResultado"></span></p>
+        <p>Logradouro: <span id="logradouro"></span></p>
+        <p>Bairro: <span id="bairro"></span></p>
+        <p>Cidade: <span id="cidade"></span></p>
+        <p>Estado: <span id="estado"></span></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
